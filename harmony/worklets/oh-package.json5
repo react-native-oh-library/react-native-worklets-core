@@ -1,0 +1,11 @@
+{
+  "name": "worklets",
+  "version": "0.5.0-0.0.1",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "rnoh": "file:../rnoh"
+    }
+}

@@ -1,6 +1,9 @@
 {
-  "name": "react-native-worklets-core",
-  "version": "1.0.0-beta.2",
+  "name": "@react-native-oh-tpl/react-native-worklets-core",
+  "version": "0.5.0-0.0.1",
+  "harmony": {
+    "alias": "react-native-worklets-core"
+  },
   "description": "A Worklet runner for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -26,7 +29,8 @@
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
-    "!**/.*"
+    "!**/.*",
+    "harmony"
   ],
   "scripts": {
     "test": "jest",
@@ -44,11 +48,12 @@
     "cpplint": "cpplint --linelength=230 --filter=-legal/copyright,-whitespace/indent,-whitespace/comments,-whitespace/ending_newline,-build/include_order,-runtime/references,-readability/todo,-whitespace/blank_line,-whitespace/todo,-runtime/int,-build/c++11,-whitespace/parens --exclude=./node_modules --recursive cpp"
   },
   "keywords": [
+    "harmony",
     "react-native",
     "ios",
     "android"
   ],
-  "repository": "https://github.com/margelo/react-native-worklets-core",
+  "repository": "https://github.com/react-native-oh-library/react-native-worklets-core",
   "author": "Christian Falch <christian.falch@gmail.com> (https://github.com/chrfalch)",
   "contributors": [
     {
@@ -69,9 +74,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/margelo/react-native-worklets-core/issues"
+    "url": "https://github.com/react-native-oh-library/react-native-worklets-core/issues"
   },
-  "homepage": "https://github.com/margelo/react-native-worklets-core#readme",
+  "homepage": "https://github.com/react-native-oh-library/react-native-worklets-core#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -181,7 +186,8 @@
     }
   },
   "dependencies": {
-    "string-hash-64": "^1.0.3"
+    "string-hash-64": "^1.0.3",
+    "react-native-worklets-core": "^0.5.0"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
