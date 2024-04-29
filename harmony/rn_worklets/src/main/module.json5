@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "rn_worklets",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
