@@ -1,5 +1,6 @@
 
 {
+  "include": ["src"],
   "extends": "./tsconfig",
   "exclude": ["example"]
 }

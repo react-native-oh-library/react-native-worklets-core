@@ -32,3 +32,5 @@ if (global.Worklets === undefined || global.Worklets == null) {
 } else {
   console.log("react-native-worklets-core installed.");
 }
+
+export default TurboModuleRegistry.get<Spec>("Worklets");
