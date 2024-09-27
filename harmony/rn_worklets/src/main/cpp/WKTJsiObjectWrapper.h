@@ -128,11 +128,7 @@ public:
     std::unique_lock lock(_readWriteMutex);
 
     auto nameStr = name.utf8(runtime);
-    // Just emplace so that we can box property values, ie. a slot can
-    // hold both an object and an int if that's what we need.
-    _properties.emplace(
-        nameStr,
-        JsiWrapper::wrap(runtime, value, this, getUseProxiesForUnwrapping()));
+    _properties[nameStr] = JsiWrapper::wrap(runtime, value, this, getUseProxiesForUnwrapping());
   }
 
   /**
@@ -198,6 +194,7 @@ private:
   }
 
   void setObjectValue(jsi::Runtime &runtime, jsi::Object &obj) {
+    std::unique_lock lock(_readWriteMutex);
     setType(JsiWrapperType::Object);
     _properties.clear();
     auto propNames = obj.getPropertyNames(runtime);
