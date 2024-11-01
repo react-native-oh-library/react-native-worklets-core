@@ -28,7 +28,6 @@
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "bootstrap": "yarn example && yarn install && yarn example pods",
     "clang-format-common": "find cpp/ -iname *.h -o -iname *.m -o -iname *.mm -o -iname *.cpp | xargs clang-format -i",
     "cpplint": "cpplint --linelength=230 --filter=-legal/copyright,-whitespace/indent,-whitespace/comments,-whitespace/ending_newline,-build/include_order,-runtime/references,-readability/todo,-whitespace/blank_line,-whitespace/todo,-runtime/int,-build/c++11,-whitespace/parens --exclude=./node_modules --recursive cpp"
   },
@@ -96,13 +95,6 @@
   "engines": {
     "node": ">= 16.0.0"
   },
-  "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
-    ]
-  },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
@@ -164,13 +156,9 @@
       ]
     ]
   },
-  "codegenConfig": {
-    "name": "RNWorkletsSpec",
-    "type": "modules",
-    "jsSrcsDir": "src"
-  },
   "dependencies": {
-    "string-hash-64": "^1.0.3"
+    "string-hash-64": "^1.0.3",
+	"react-native-worklets-core":"1.3.3"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
