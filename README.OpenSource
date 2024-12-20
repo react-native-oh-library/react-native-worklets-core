@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-worklets-core",
+        "License": "MIT License",
+        "License File": "https://github.com/margelo/react-native-worklets-core/blob/main/LICENSE",
+        "Version Number": "1.3.3",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/margelo/react-native-worklets-core",
+        "Description": "A Worklet runner for React Native"
+    }
+]
